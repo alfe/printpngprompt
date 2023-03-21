@@ -1,4 +1,7 @@
 # print png prompt
+
+[![Version](https://img.shields.io/npm/v/printpngprompt.svg)](https://www.npmjs.com/package/printpngprompt)
+
 Print Stable Diffusion Prompt included in PNG files
 
 ```sh
@@ -51,11 +54,7 @@ $ npx printpngprompt example.png --markdown
 - Sampler: DPM++ 2M Karras
 - CFG scale: 7
 - Seed: 000000000
-- Size: 512x512
-- Model hash: 0000ffff00
-- Model: example-model
-- Denoising strength: 0.5
-- Clip skip: 2
+- ...
 
 ---
 
