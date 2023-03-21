@@ -1,0 +1,29 @@
+{
+  "name": "printpngprompt",
+  "version": "1.0.0",
+  "description": "CLI to convert AVIF files to JPEG files",
+  "author": {
+    "name": "alfe",
+    "email": "alfe10251@gmail.com",
+    "url": "https://alfebelow.com/"
+  },
+  "repository": "git://github.com/alfe/printpngprompt.git",
+  "license": "MIT",
+  "keywords": [
+    "avif"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "start": "node ./bin/printpngprompt.js ."
+  },
+  "bin": {
+    "printpngprompt": "bin/printpngprompt.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "png-metadata": "^1.0.2"
+  }
+}
