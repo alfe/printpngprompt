@@ -1,7 +1,7 @@
 {
   "name": "printpngprompt",
   "version": "1.0.0",
-  "description": "CLI to convert AVIF files to JPEG files",
+  "description": "CLI to Print Stable Diffusion Prompt included in PNG files",
   "author": {
     "name": "alfe",
     "email": "alfe10251@gmail.com",
