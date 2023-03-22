@@ -45,7 +45,8 @@ const showPngPrompt = (fileName) => {
     )
   ))
 
-  const parameters = TEXT[0].data;
+  const parameters = TEXT[0]?.data;
+  if (!parameters) return;
   const prompt = parameters.split('Negative prompt:').shift();
   const others = parameters.split('Negative prompt:').pop();
   const negativePrompt = others.split('\nSteps:')[0]
@@ -53,7 +54,7 @@ const showPngPrompt = (fileName) => {
   const otherParams = (`Steps:${others.split('\nSteps:')[1]}`.split(/,/g))
 
   console.log(`
-${opts.markdown ? '### ' :''}${fileName.replace(/^\.\//, '')}
+${opts.markdown ? '### ' :''}${fileName.replace(/^\.\//, '').replace(/\\/g, '/')}
 ${opts.markdown ? `
 ![img](${fileName})
 ` :''}
