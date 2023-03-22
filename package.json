@@ -1,6 +1,6 @@
 {
   "name": "printpngprompt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI to Print Stable Diffusion Prompt included in PNG files",
   "author": {
     "name": "alfe",
