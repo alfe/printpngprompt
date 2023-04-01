@@ -11,6 +11,8 @@ program
   .option('-m, --markdown', 'show with markdown layout')
   .option('-r, --recursive', 'recursive digging')
   .option('-d, --debug', 'show raw PNG data')
+  .version('1.0.3', '-v, --version', 'output the current version');
+
 
 program.parse(process.argv);
 if (program.args.length < 1) {
